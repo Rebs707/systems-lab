@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -105,17 +106,52 @@
         <div class="work-list">
           <article class="work-item">
             <div class="work-number">W / 01</div>
-            <div class="work-content"><p class="work-type">SYSTEMS ENGINEERING · PROTOTYPE</p><h3>Cloud observability and monitoring</h3><p>Implemented a cloud-native observability stack using Prometheus and Grafana to collect, inspect and visualise service metrics, with a focus on monitoring fundamentals and operational visibility.</p></div>
+            <div class="work-content">
+              <p class="work-type">SYSTEMS ENGINEERING · PROTOTYPE</p>
+              <h3>Cloud observability and monitoring</h3>
+              <p>Implemented a cloud-native observability stack using Prometheus and Grafana to collect, inspect and visualise service metrics, with a focus on monitoring fundamentals and operational visibility.</p>
+            </div>
             <div class="work-status"><span class="status-dot"></span> Implemented prototype</div>
           </article>
+
           <article class="work-item">
             <div class="work-number">W / 02</div>
-            <div class="work-content"><p class="work-type">AI SYSTEMS · EXPLORATION</p><h3>Enterprise knowledge and AI workflows</h3><p>Architecting an enterprise knowledge assistant around retrieval-augmented generation, orchestration and evaluation, with attention to grounded responses and operational integration.</p></div>
-            <div class="work-status"><span class="status-dot"></span> Platform architecture</div>
+            <div class="work-content">
+              <p class="work-type">ENTERPRISE AI SYSTEMS · ENGINEERING IMPLEMENTATION</p>
+              <h3>Enterprise Knowledge Platform</h3>
+              <p>A local-first document intelligence platform built with FastAPI and SQLite. The current implementation supports validated document ingestion, overlapping text chunking, persistent metadata and chunk storage, and deterministic keyword-based retrieval through HTTP API endpoints.</p>
+
+              <p>The ingestion workflow validates UTF-8 text and Markdown files, enforces a 2 MiB upload limit, calculates SHA-256 digests and stores document metadata and chunks. Search ranks matching chunks using case-insensitive keyword occurrence scoring.</p>
+
+              <p><strong>Implementation evidence:</strong> 18 automated tests, including 7 HTTP-level API integration tests covering document upload, metadata retrieval, search and validation behaviour.</p>
+
+              <div class="tag-row">
+                <span>Python</span>
+                <span>FastAPI</span>
+                <span>SQLite</span>
+                <span>Document processing</span>
+                <span>Information retrieval</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/Rebs707/enterprise-knowledge-platform" target="_blank" rel="noopener noreferrer">View GitHub repository ↗</a>
+                <a href="https://rebs707.github.io/projects/enterprise-knowledge-platform/" target="_blank" rel="noopener noreferrer">Read engineering case study ↗</a>
+              </div>
+
+              <p><strong>Research relevance:</strong> This implementation provides an engineering foundation for examining enterprise document retrieval, knowledge access and retrieval evaluation. Potential future extensions include semantic retrieval, embedding-based indexing, contextual ranking and AI-assisted knowledge access. These are research directions, not capabilities implemented in the current release.</p>
+
+              <p><strong>Current boundary:</strong> Retrieval is keyword-based. The platform does not currently implement embeddings, vector search, an LLM, Amazon Bedrock or a learned ranking model.</p>
+            </div>
+            <div class="work-status"><span class="status-dot"></span> Implemented · 18 tests</div>
           </article>
+
           <article class="work-item">
             <div class="work-number">W / 03</div>
-            <div class="work-content"><p class="work-type">RESEARCH METHODS · IN PROGRESS</p><h3>Operational decision intelligence</h3><p>Establishing a systems-oriented framework for examining AI-assisted operational decisions, including reliability, explainability, human oversight and measurable operational outcomes.</p></div>
+            <div class="work-content">
+              <p class="work-type">RESEARCH METHODS · IN PROGRESS</p>
+              <h3>Operational decision intelligence</h3>
+              <p>Establishing a systems-oriented framework for examining AI-assisted operational decisions, including reliability, explainability, human oversight and measurable operational outcomes.</p>
+            </div>
             <div class="work-status"><span class="status-dot"></span> Research framework</div>
           </article>
         </div>
