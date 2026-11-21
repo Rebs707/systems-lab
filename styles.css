@@ -58,3 +58,17 @@
     gap: 12px;
   }
 }
+
+
+/* Contact phone link: override browser default link colours */
+.contact-section .contact-right .contact-details a,
+.contact-section .contact-right .contact-details a:link,
+.contact-section .contact-right .contact-details a:visited,
+.contact-section .contact-right .contact-details a:active {
+  color: #c2cec4 !important;
+  text-decoration: none !important;
+}
+.contact-section .contact-right .contact-details a:hover {
+  color: var(--lime) !important;
+  text-decoration: none !important;
+}
