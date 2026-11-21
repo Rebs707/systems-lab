@@ -143,3 +143,28 @@
 .research-card-detail>p:last-child{margin-bottom:0!important}
 @media(max-width:850px){.research-grid{grid-template-columns:1fr 1fr}.research-card-interactive summary{min-height:320px}}
 @media(max-width:620px){.research-grid{grid-template-columns:1fr}.research-card-interactive summary{min-height:0}.research-card-detail{padding:17px 20px}}
+
+
+/* Refined Systems Lab research cards — restrained palette and controlled icon scale */
+.research-card-interactive{background:#fbfcf9!important;border:1px solid #dce3d9!important;border-radius:0!important;box-shadow:none!important;overflow:hidden}
+.research-card-interactive:hover,.research-card-interactive[open]{background:#f1f4ed!important;border-color:#c8d4c2!important}
+.research-card-interactive summary{position:relative;list-style:none!important;min-height:315px!important;padding:22px 22px 18px!important;display:flex!important;flex-direction:column!important;gap:0!important}
+.research-card-interactive summary::-webkit-details-marker{display:none!important}
+.research-card-interactive summary::marker{content:""!important;display:none!important}
+.research-card-interactive summary:after{content:"＋";position:absolute;right:21px;top:47px;font:14px "DM Mono",monospace;color:#819674}
+.research-card-interactive[open] summary:after{content:"−"}
+.research-card-interactive .card-meta{font:8px "DM Mono",monospace!important;color:#78847a!important;letter-spacing:.08em}
+.research-card-interactive .card-icon{display:flex!important;align-items:center!important;justify-content:flex-start!important;height:32px!important;width:32px!important;margin:26px 0 16px!important;padding:0!important;color:#82966f!important;font-size:0!important;line-height:0!important}
+.research-card-interactive .card-icon svg{display:block!important;width:29px!important;height:29px!important;min-width:29px!important;max-width:29px!important;min-height:29px!important;max-height:29px!important;fill:none!important;stroke:#82966f!important;stroke-width:1.25!important;stroke-linecap:round!important;stroke-linejoin:round!important;overflow:visible!important}
+.research-card-title{display:block!important;font:600 18px/1.28 var(--display)!important;letter-spacing:-.04em!important;color:var(--ink)!important;margin:0 0 10px!important}
+.research-card-summary{display:block!important;font:11px/1.75 var(--display)!important;color:#68756b!important;margin:0 0 17px!important}
+.research-card-interactive .tag-row{display:flex!important;flex-wrap:wrap!important;gap:5px!important;margin: auto 0 0!important;padding:0!important}
+.research-card-interactive .tag-row span{background:transparent!important;border:1px solid #d7dfd3!important;color:#69766b!important;font:7px "DM Mono",monospace!important;padding:5px 7px!important}
+.research-card-cta{display:flex!important;justify-content:space-between!important;align-items:center!important;border-top:1px solid #e0e6dc!important;margin-top:17px!important;padding-top:11px!important;font:8px "DM Mono",monospace!important;letter-spacing:.04em!important;color:#596b57!important}
+.research-card-cta>span{display:none!important}
+.research-card-detail{background:#f1f4ed!important;border-top:1px solid #dce3d9!important;padding:18px 22px 21px!important}
+.research-card-detail .detail-label{font:8px "DM Mono",monospace!important;letter-spacing:.1em!important;color:#78847a!important}
+.research-card-detail .research-question{font:500 14px/1.5 var(--display)!important;color:#263d32!important}
+.research-card-detail>p:not(.detail-label){font:10px/1.75 var(--display)!important;color:#68756b!important}
+@media(max-width:850px){.research-card-interactive summary{min-height:300px!important}}
+@media(max-width:620px){.research-card-interactive summary{min-height:0!important}.research-card-interactive .card-icon{margin:22px 0 13px!important}}
