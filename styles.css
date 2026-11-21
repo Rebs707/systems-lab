@@ -168,3 +168,34 @@
 .research-card-detail>p:not(.detail-label){font:10px/1.75 var(--display)!important;color:#68756b!important}
 @media(max-width:850px){.research-card-interactive summary{min-height:300px!important}}
 @media(max-width:620px){.research-card-interactive summary{min-height:0!important}.research-card-interactive .card-icon{margin:22px 0 13px!important}}
+
+
+/* Compact project actions to match the site's editorial typography */
+.showcase-content .project-links{
+  display:flex!important;
+  flex-wrap:wrap!important;
+  align-items:center!important;
+  gap:8px 18px!important;
+  margin:14px 0 4px!important;
+}
+.showcase-content .project-links a,
+.showcase-content .project-links a:link,
+.showcase-content .project-links a:visited,
+.showcase-content .project-links a:active{
+  display:inline-flex!important;
+  align-items:center!important;
+  width:fit-content!important;
+  color:var(--forest)!important;
+  font:9px/1.5 "DM Mono",monospace!important;
+  letter-spacing:.01em!important;
+  text-decoration:none!important;
+  border-bottom:1px solid #bdcbbd!important;
+  padding:0 0 3px!important;
+}
+.showcase-content .project-links a:hover{
+  color:#789b36!important;
+  border-color:#789b36!important;
+}
+@media(max-width:620px){
+  .showcase-content .project-links{gap:10px 16px!important}
+}
