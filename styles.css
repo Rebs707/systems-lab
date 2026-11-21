@@ -94,3 +94,25 @@
 .all-repositories-link a{font-size:10px;color:var(--ink);text-decoration:none}
 .all-repositories-link a:hover{color:#789d42}
 @media(max-width:620px){.showcase-project{grid-template-columns:34px minmax(0,1fr);gap:12px;padding:23px 0}.showcase-content h3{font-size:18px}}
+
+
+/* Project links: keep every state within the Systems Lab palette */
+.showcase-content .project-links a,
+.showcase-content .project-links a:link,
+.showcase-content .project-links a:visited,
+.showcase-content .project-links a:active,
+.all-repositories-link a,
+.all-repositories-link a:link,
+.all-repositories-link a:visited,
+.all-repositories-link a:active {
+  color: var(--forest) !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid #bdcbbd;
+  padding-bottom: 3px;
+}
+.showcase-content .project-links a:hover,
+.all-repositories-link a:hover {
+  color: #789b36 !important;
+  border-color: #789b36;
+  text-decoration: none !important;
+}
