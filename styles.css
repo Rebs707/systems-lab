@@ -74,17 +74,22 @@
 }
 
 
-/* GitHub repository index */
+
+
+/* Featured GitHub repositories */
 .repository-index{border-top:1px solid var(--line);margin-top:34px;padding-top:27px}
-.repository-index-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:24px}
+.repository-index-heading{margin-bottom:22px}
 .repository-index-heading h3{font:600 clamp(24px,2.7vw,34px)/1.15 var(--display);letter-spacing:-.045em;margin:10px 0 0}
 .repository-index-heading h3 em{font-family:var(--serif);font-weight:400}
-.repository-index-heading>a,.repository-group a{color:var(--ink);text-decoration:none}
-.repository-index-heading>a{font-size:10px;white-space:nowrap}
-.repository-index-heading>a:hover,.repository-group a:hover{color:#789d42}
-.repository-groups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 42px}
-.repository-group h4{font:600 11px var(--display);margin:0 0 11px}
-.repository-group ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
-.repository-group li{font-size:10px;line-height:1.5}
-.repository-note{font-size:9px;line-height:1.7;color:var(--muted);margin:24px 0 0}
-@media(max-width:620px){.repository-index-heading{align-items:flex-start;flex-direction:column;gap:12px}.repository-groups{grid-template-columns:1fr;gap:22px}}
+.featured-repositories{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.featured-repository{display:flex;flex-direction:column;align-items:flex-start;gap:11px;padding:18px;border:1px solid var(--line);text-decoration:none;color:var(--ink);min-height:190px}
+.featured-repository:hover{border-color:#9bb77c}
+.repository-number{font:8px "DM Mono",monospace;color:var(--muted);letter-spacing:.1em}
+.featured-repository strong{font:600 14px var(--display)}
+.featured-repository>span:nth-of-type(2){font-size:10px;line-height:1.7;color:var(--muted)}
+.featured-repository>b{font-size:9px;font-weight:600;margin-top:auto}
+.all-repositories-link{display:flex;justify-content:flex-end;margin-top:18px}
+.all-repositories-link a{font-size:10px;color:var(--ink);text-decoration:none}
+.all-repositories-link a:hover{color:#789d42}
+@media(max-width:850px){.featured-repositories{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.featured-repositories{grid-template-columns:1fr}.featured-repository{min-height:0}}
