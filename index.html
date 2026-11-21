@@ -129,85 +129,45 @@
 
       <section class="section work-section" id="work">
         <div class="section-heading">
-          <div><p class="section-index">03 / SELECTED WORK</p><h2>From ideas to<br><em>working systems.</em></h2></div>
-          <p class="section-summary">Selected engineering implementations, architecture studies and research artefacts connecting intelligent software with dependable operations.</p>
+          <div><p class="section-index">03 / PROJECTS</p><h2>From ideas to<br><em>working systems.</em></h2></div>
+          <p class="section-summary">Technical implementations exploring intelligent systems, cloud infrastructure and operational reliability.</p>
         </div>
-        <div class="work-list">
-          <article class="work-item">
-            <div class="work-number">W / 01</div>
-            <div class="work-content">
-              <p class="work-type">SYSTEMS ENGINEERING · PROTOTYPE</p>
-              <h3>Cloud observability and monitoring</h3>
-              <p>Implemented a cloud-native observability stack using Prometheus and Grafana to collect, inspect and visualise service metrics, with a focus on monitoring fundamentals and operational visibility.</p>
+        <div class="project-showcase">
+          <article class="showcase-project">
+            <div class="showcase-number">01</div>
+            <div class="showcase-content">
+              <p class="work-type">CLOUD INFRASTRUCTURE · FAILURE SIMULATION</p>
+              <h3>Cloud Chaos Theatre</h3>
+              <p>An interactive environment for simulating cloud infrastructure failures, tracing dependency-driven service disruption and examining incident diagnosis and recovery strategies. The simulation is deterministic, and all infrastructure is simulated.</p>
+              <div class="project-links"><a href="https://github.com/Rebs707/cloud-chaos-theatre" target="_blank" rel="noopener noreferrer">View GitHub repository ↗</a></div>
             </div>
-            <div class="work-status"><span class="status-dot"></span> Implemented prototype</div>
           </article>
-
-          <article class="work-item">
-            <div class="work-number">W / 02</div>
-            <div class="work-content">
-              <p class="work-type">ENTERPRISE AI SYSTEMS · ENGINEERING IMPLEMENTATION</p>
+          <article class="showcase-project">
+            <div class="showcase-number">02</div>
+            <div class="showcase-content">
+              <p class="work-type">ENTERPRISE AI SYSTEMS · INFORMATION RETRIEVAL</p>
               <h3>Enterprise Knowledge Platform</h3>
-              <p>A local-first document intelligence platform built with FastAPI and SQLite. The current implementation supports validated document ingestion, overlapping text chunking, persistent metadata and chunk storage, and deterministic keyword-based retrieval through HTTP API endpoints.</p>
-
-              <p>The ingestion workflow validates UTF-8 text and Markdown files, enforces a 2 MiB upload limit, calculates SHA-256 digests and stores document metadata and chunks. Search ranks matching chunks using case-insensitive keyword occurrence scoring.</p>
-
-              <p><strong>Implementation evidence:</strong> 18 automated tests, including 7 HTTP-level API integration tests covering document upload, metadata retrieval, search and validation behaviour.</p>
-
-              <div class="tag-row">
-                <span>Python</span>
-                <span>FastAPI</span>
-                <span>SQLite</span>
-                <span>Document processing</span>
-                <span>Information retrieval</span>
-              </div>
-
+              <p>A local-first document intelligence platform built with FastAPI and SQLite. It supports validated text and Markdown ingestion, overlapping text chunking, persistent metadata and chunk storage, and deterministic keyword-based retrieval through HTTP API endpoints.</p>
+              <p><strong>Implementation evidence:</strong> 18 automated tests, including 7 HTTP-level API integration tests.</p>
+              <div class="tag-row"><span>Python</span><span>FastAPI</span><span>SQLite</span><span>Document processing</span></div>
               <div class="project-links">
                 <a href="https://github.com/Rebs707/enterprise-knowledge-platform" target="_blank" rel="noopener noreferrer">View GitHub repository ↗</a>
                 <a href="https://rebs707.github.io/projects/enterprise-knowledge-platform/" target="_blank" rel="noopener noreferrer">Read engineering case study ↗</a>
               </div>
-
-              <p><strong>Research relevance:</strong> This implementation provides an engineering foundation for examining enterprise document retrieval, knowledge access and retrieval evaluation. Potential future extensions include semantic retrieval, embedding-based indexing, contextual ranking and AI-assisted knowledge access. These are research directions, not capabilities implemented in the current release.</p>
-
-              <p><strong>Current boundary:</strong> Retrieval is keyword-based. The platform does not currently implement embeddings, vector search, an LLM, Amazon Bedrock or a learned ranking model.</p>
+              <p class="project-boundary"><strong>Current boundary:</strong> Retrieval is keyword-based. The current release does not implement embeddings, vector search or an LLM.</p>
             </div>
-            <div class="work-status"><span class="status-dot"></span> Implemented · 18 tests</div>
           </article>
-
-          <article class="work-item">
-            <div class="work-number">W / 03</div>
-            <div class="work-content">
-              <p class="work-type">RESEARCH METHODS · IN PROGRESS</p>
-              <h3>Operational decision intelligence</h3>
-              <p>Establishing a systems-oriented framework for examining AI-assisted operational decisions, including reliability, explainability, human oversight and measurable operational outcomes.</p>
+          <article class="showcase-project">
+            <div class="showcase-number">03</div>
+            <div class="showcase-content">
+              <p class="work-type">CLOUD MIGRATION · INFRASTRUCTURE AUTOMATION</p>
+              <h3>VCP to AWS Migration Simulation</h3>
+              <p>An enterprise-style migration simulation covering AWS infrastructure provisioning with Terraform, migration and branch-onboarding workflows, validation, incident scenarios and operational recovery runbooks.</p>
+              <div class="project-links"><a href="https://github.com/Rebs707/vcp-to-aws-migration-simulation" target="_blank" rel="noopener noreferrer">View GitHub repository ↗</a></div>
             </div>
-            <div class="work-status"><span class="status-dot"></span> Research framework</div>
           </article>
         </div>
-        <div class="repository-index">
-          <div class="repository-index-heading">
-            <div><p class="work-type">GITHUB / FEATURED REPOSITORIES</p><h3>Explore selected <em>implementations.</em></h3></div>
-          </div>
-          <div class="featured-repositories">
-            <a class="featured-repository" href="https://github.com/Rebs707/cloud-chaos-theatre" target="_blank" rel="noopener noreferrer">
-              <span class="repository-number">R / 01</span><strong>Cloud Chaos Theatre</strong>
-              <span>Deterministic cloud failure simulation, dependency modelling, incident diagnosis and recovery planning.</span>
-              <b>View repository ↗</b>
-            </a>
-            <a class="featured-repository" href="https://github.com/Rebs707/enterprise-knowledge-platform" target="_blank" rel="noopener noreferrer">
-              <span class="repository-number">R / 02</span><strong>Enterprise Knowledge Platform</strong>
-              <span>Local-first document ingestion, chunking, persistent storage and keyword-based retrieval through a tested FastAPI service.</span>
-              <b>View repository ↗</b>
-            </a>
-            <a class="featured-repository" href="https://github.com/Rebs707/vcp-to-aws-migration-simulation" target="_blank" rel="noopener noreferrer">
-              <span class="repository-number">R / 03</span><strong>VCP to AWS Migration Simulation</strong>
-              <span>Enterprise-style migration simulation using Terraform, automation, validation, observability and operational runbooks.</span>
-              <b>View repository ↗</b>
-            </a>
-          </div>
-          <div class="all-repositories-link"><a href="https://github.com/Rebs707?tab=repositories" target="_blank" rel="noopener noreferrer">Explore all GitHub repositories ↗</a></div>
-        </div>
-        <p class="small-note">Each entry distinguishes implemented engineering work from architecture and research artefacts. Methods, evidence, repositories and evaluation results will be documented alongside the relevant work.</p>
+        <div class="all-repositories-link"><a href="https://github.com/Rebs707?tab=repositories" target="_blank" rel="noopener noreferrer">Explore all GitHub repositories ↗</a></div>
       </section>
 
       <section class="writing-section" id="writing">
