@@ -116,3 +116,30 @@
   border-color: #789b36;
   text-decoration: none !important;
 }
+
+
+/* Interactive research-domain cards */
+.research-grid{grid-template-columns:repeat(3,minmax(0,1fr));align-items:start;gap:14px}
+.research-card-interactive{min-height:0;padding:0;background:#fff;border:1px solid var(--line);transition:border-color .2s ease,background .2s ease}
+.research-card-interactive:hover,.research-card-interactive[open]{border-color:#b8c9ae}
+.research-card-interactive[open]{background:#f8faf6}
+.research-card-interactive summary{list-style:none;cursor:pointer;padding:23px 22px 19px;display:flex;flex-direction:column;min-height:300px;outline:none}
+.research-card-interactive summary::-webkit-details-marker{display:none}
+.research-card-interactive summary:focus-visible{outline:2px solid #8da86f;outline-offset:3px}
+.research-card-interactive .card-meta{width:100%;display:flex;justify-content:space-between}
+.research-card-interactive .card-icon{height:34px;margin:29px 0 17px;color:#78945c}
+.research-card-interactive .card-icon svg{width:31px;height:31px;fill:none;stroke:currentColor;stroke-width:1.35;stroke-linecap:round;stroke-linejoin:round}
+.research-card-title{font:600 18px/1.25 var(--display);letter-spacing:-.04em;margin-bottom:11px}
+.research-card-summary{font-size:11px;line-height:1.75;color:var(--muted);margin-bottom:19px}
+.research-card-interactive .tag-row{margin-top:auto;display:flex;flex-wrap:wrap;gap:5px}
+.research-card-interactive .tag-row span{font-size:7px;padding:5px 6px}
+.research-card-cta{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);margin-top:18px;padding-top:12px;font:9px "DM Mono",monospace;color:var(--forest)}
+.research-card-cta>span{font-size:15px;color:#78945c;transition:transform .2s ease}
+.research-card-interactive[open] .research-card-cta>span{transform:rotate(45deg)}
+.research-card-detail{border-top:1px solid var(--line);padding:19px 22px 22px}
+.research-card-detail .detail-label{font:8px "DM Mono",monospace;letter-spacing:.1em;color:#758078;margin:0 0 7px}
+.research-card-detail>p:not(.detail-label){font-size:10px;line-height:1.75;color:var(--muted);margin:0 0 16px}
+.research-card-detail .research-question{font:500 14px/1.5 var(--display)!important;letter-spacing:-.02em;color:var(--ink)!important}
+.research-card-detail>p:last-child{margin-bottom:0!important}
+@media(max-width:850px){.research-grid{grid-template-columns:1fr 1fr}.research-card-interactive summary{min-height:320px}}
+@media(max-width:620px){.research-grid{grid-template-columns:1fr}.research-card-interactive summary{min-height:0}.research-card-detail{padding:17px 20px}}
